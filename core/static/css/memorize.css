@@ -20,7 +20,7 @@
 }
 .number{
     width: 4%;
-    margin: 0;
+    margin: 5px;
     padding-bottom: 8px;
     text-align: center;
 }
@@ -53,7 +53,7 @@
     padding-top: 4px;
     margin-top: 2px;
     font-size: 1rem;
-    width: 3%;
+    width: 5%;
 }
 .ans_div{
     margin: 0 auto;
