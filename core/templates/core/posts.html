@@ -27,7 +27,7 @@
                 <div class="media-body">
                     <div class="article-metadata">
                         <a href="{% url 'user-posts' post.author.username %}" class="mr-2">{{post.author.profile.duty}}</a>
-                        <small class="text-muted">신40{{post.date_posted|date:"(Y) F, d(D)"}}</small>
+                        <small class="text-muted">신41{{post.date_posted|date:"(Y) F, d(D)"}}</small>
                     </div>
                     <hr>
                     <h5><a href="{% url 'post-detail' post.id %}" class="article-title">{{post.hangul_title}}</a></h5>
