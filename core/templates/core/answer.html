@@ -32,7 +32,7 @@
             <button class="btn_show" id="{{ans.number}}" onclick="show('{{ans.id}}')">show</button>
         </div>
         {% endfor %}
-        <div class="d-flex justify-evenly" style="width: 80%; margin: 0 auto; margin-top: 20px;">
+        <div class="container d-flex justify-evenly" style="margin-top: 20px; flex-wrap: wrap;">
             {% for qtn in qtns %}
                 <a href="{% url 'answers' test.id qtn.id %}"><button
                         style="padding: 5px 10px 5px 10px; margin-left: 10px; margin-top: 5px;" class="btn_show">{{qtn.number}}</button></a>
