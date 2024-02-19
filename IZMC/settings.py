@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-&q^ea=a7%u68)k*068uut(@lqszi&a$h0q%y77tn+82-+-0(53
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'zmc.onrender.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'zmc.onrender.com']
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -128,10 +128,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# STATIC_ROOT = BASE_DIR/'assets'
+STATIC_ROOT = BASE_DIR/'assets'
 STATIC_URL = 'static/'
 STATICFILES_DIR = (os.path.join(BASE_DIR, 'core/static'))
-# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage" #keeps all the static files
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage" #keeps all the static files
 
 #this one applies when the user logs into thier account.
 LOGIN_REDIRECT_URL = 'home'
